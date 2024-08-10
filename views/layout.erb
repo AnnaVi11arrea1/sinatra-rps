@@ -4,11 +4,30 @@
     <title>Sinatra RPS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+    body: {
+      background-color: #6a84ad;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
   </head>
 
   <body>
+  <div  class="navbar">
+  <a href="/rock">Play Rock</a>
+  <a href="/paper">Play Paper</a>
+  <a href="/scissors">Play Scissors</a>
+  </div>
 
-    <%= yield %>
+  <%= yield %>
 
+
+  
   </body>
 </html>
